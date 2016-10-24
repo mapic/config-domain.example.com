@@ -1,0 +1,5 @@
+{
+	"user" : "systemapic",
+	"password" : "MUST_MATCH_MONGO_CONFIG",
+	"database" : "systemapic"
+}
