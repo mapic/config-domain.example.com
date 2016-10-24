@@ -14,7 +14,7 @@ These are the necessary config files for Mapic Engine server. You can run this o
 
 | Config file                                 |        Purpose            |   What to update
 | --------------------------------------------|---------------------------|-------------------------------| 
-| domain.example.nginx.conf                   | NginX server config       |   Domain names                |
+| domain.example.com.nginx.conf               | NginX server config       |   Domain names                |
 | mongo.json                                  | MongoDB settings          |   MongoDB access details      |
 | mongod.conf                                 | MongoDB config            |   Nothing, defaults good      |
 | redis.layers.conf                           | Redis config              |   Access details              |
