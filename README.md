@@ -33,7 +33,7 @@ These are the necessary config files for Mapic Engine server. You can run this o
 ## DNS
 Quite a few DNS entries are needed. (This is due to limitations on parallel concurrent connections allowed in modern browsers, which means when requesting tiles, there's a major speedup if requesting from several subdomains.)
 
-There are three different endpoints which make a lot of requests: `tiles`, `proxy` and `grid`. 
+You need to set the following DNS entries. The subdomains can be named whatever, but the routes must be added to [`engine.config.js`](https://github.com/mapic/config-domain.example.com/blob/master/engine.config.js#L222).
 
 | Name/host/alias         | TTL |  Type | IP/value      |
 --------------------------|-----|-------|---------------|
