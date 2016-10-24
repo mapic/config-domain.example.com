@@ -5,7 +5,7 @@ These are the necessary config files for Mapic Engine server. You can run this o
 
 
 ## Manual install
-1. Clone repo to `/dockerized/config/` folder in [`dockerized`](https://github.com/mapic/dockerized) root.
+1. Clone repo to `/mapic/config/` folder in [`mapic`](https://github.com/mapic/mapic) root.
 2. Make sure config folder is named `domain.example.com`.
 3. Set ENV variable `MAPIC_DOMAIN` to `domain.example.com`: `export MAPIC_DOMAIN=domain.example.com`
 4. Update the config files (see overview below).
