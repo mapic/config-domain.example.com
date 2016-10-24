@@ -4,7 +4,7 @@ These are the necessary config files for Mapic Engine server. You can run this o
 
 
 
-## Manual install
+## Install
 1. Clone repo to `/mapic/config/` folder in [`mapic`](https://github.com/mapic/mapic) root.
 2. Make sure config folder is named `domain.example.com`.
 3. Set ENV variable `MAPIC_DOMAIN` to `domain.example.com`: `export MAPIC_DOMAIN=domain.example.com`
