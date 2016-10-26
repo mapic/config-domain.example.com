@@ -10,9 +10,8 @@ DOMAIN=mapic.io
 SUFFIX=tx
 EMAIL=hello@mapic.io
     
-
-cd ssl
-./certbot-auto certonly \
+# certbot-auto
+./ssl certonly \
     --standalone \
     --agree-tos \
     --email "$EMAIL" \
@@ -32,3 +31,5 @@ cd ssl
     --domain grid-"$SUFFIX"c."$DOMAIN"    \
     --domain grid-"$SUFFIX"d."$DOMAIN"    
    
+cp /etc/letsencrypt/live/dev.mapic.io/privkey.pem ssl_certificate.key
+cp /etc/letsencrypt/live/dev.mapic.io/fullchain.pem ssl_certificate.pem
