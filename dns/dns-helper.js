@@ -7,7 +7,7 @@ var fs = require('fs');
 try {
     var config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 } catch (e) {
-    return console.log('Please \n - edit the config.template.json file with your credentials and settings, and \n - rename to config.json');
+    return console.log('Please see the dns/ folder and \n - edit the config.template.json file with your credentials and settings, and \n - rename to config.json');
 }
 
 // subdomains for which to create dns entries
@@ -70,15 +70,12 @@ ops.push(function (data, callback) {
                 "Name": s + "." + config.hosted_zone_domain,
                 "Type": "A",
                 "TTL": 600,
-                "ResourceRecords": [
-                    {
-                        "Value": config.ip
-                    }
-                ]
+                "ResourceRecords": [{
+                    "Value": config.ip
+                }]
             }
         });
     });
-
     
     // update dns records
     route53.changeResourceRecordSets(options, function(err,data) {
@@ -87,10 +84,9 @@ ops.push(function (data, callback) {
     
 });
 
-
+// run ops
 async.waterfall(ops, function (err, result) {
     if (err) return console.log('Something went wrong: ', err);
-
     console.log('\nSuccess! DNS entries created for\n', subdomains.join('\n'), '\n\nAnswer from AWS was:\n', result);
 });
 
