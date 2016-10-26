@@ -1,10 +1,17 @@
 #!/bin/bash
 
-SUBDOMAIN=domain
-DOMAIN=example.com
+# SUBDOMAIN=domain
+# DOMAIN=example.com
+# SUFFIX=tx
+# EMAIL=hello@mapic.io
+    
+SUBDOMAIN=dev
+DOMAIN=mapic.io
 SUFFIX=tx
 EMAIL=hello@mapic.io
     
+
+cd ssl
 ./certbot-auto certonly \
     --standalone \
     --agree-tos \
