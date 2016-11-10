@@ -1,6 +1,6 @@
 # Config files for  `domain.example.com`
 
-These are the necessary config files for Mapic Engine server. You can run this on your own domain, simply replace `domain.example.com` with your own domain. (It does not need to be a subdomain.)
+These are the necessary config files for Mapic. You can run this on your own domain, simply replace `domain.example.com` with your own domain. (It does not need to be a subdomain.)
 
 ## Install
 1. Clone repo to `mapic/config/` folder in the [`mapic`](https://github.com/mapic/mapic) root.
