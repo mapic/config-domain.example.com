@@ -8,19 +8,19 @@ These are the necessary config files for Mapic Engine server. You can run this o
 3. [Set ENV variable](https://www.schrodinger.com/kb/1842) `MAPIC_DOMAIN` to `domain.example.com`.
 4. Update the necessary config files (see list below).
 5. Add DNS entries.
-6. Start your engines! `cd mapic/compose/ && ./restart.sh`
+6. Start your engines! `./restart-mapic.sh`
 
 ## List of config files 
 
 | Config file                                 |        Purpose            |   What to update
 | --------------------------------------------|---------------------------|-------------------------------| 
-| domain.example.com.nginx.conf               | NginX server config       |   Domain names                |
+| domain.example.com.nginx.conf               | NginX server config       |   Domain name                 |
 | mongo.json                                  | MongoDB settings          |   MongoDB access details      |
 | redis.layers.conf                           | Redis config              |   Access details              |
 | redis.stats.conf                            | Redis config              |   Access details              |
 | redis.temp.conf                             | Redis config              |   Access details              |
 | redis.tokens.conf                           | Redis config              |   Access details              |
-| engine.config.js                            | Redis config              |   Access details              |
+| engine.config.js                            | Engine config             |   Access details, domain name |
 | mile.config.js                              | Mile config               |   Mongo/redis access details  |
 | env.sh                                      | PostGIS settings          |   PostGIS access details      | 
 |                                             |                           |                               |
